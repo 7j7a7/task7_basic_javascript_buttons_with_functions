@@ -76,15 +76,22 @@ function btn7(){
     }
 // }
 
-
-//area of a triangle where three sides are 5, 6, 7.
-function btn8(){}
-
-
-
-
-
-
+//find all distinct prime factors of a given integer.
+function btn8(){
+    var side1 = parseInt(document.getElementById("side1").value); 
+    
+    var side2 = parseInt(document .getElementById("side2").value); 
+    
+    var side3 = parseInt(document .getElementById("side3").value); 
+    
+    console.log(typeof(side1)); 
+    var s = (side1 + side2 + side3) / 2; 
+    
+    var area = Math.sqrt(s * ((s - side1)  
+            * (s - side2) * (s - side3))); 
+    
+    document.getElementById("display").innerHTML = area; 
+}
 
 //calculate multiplication and division of two numbers
 function btn9(){
@@ -143,8 +150,5 @@ function btn11(){
     }else{ alert("invalid number");}
 }
 
-//find all distinct prime factors of a given integer.
-function btn12(){}
-
 //light and dark mode/theme
-function btn13(){}
+function btn12(){}
